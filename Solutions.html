@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikash Maths Academy</title>
+
+    <!-- ------------------Adding Css-------------------------- -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- ---------------------Google Fonts------------------------------ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Oswald&family=Poppins&family=Roboto+Slab:wght@400;500&family=Roboto:wght@400;500&family=Young+Serif&display=swap" rel="stylesheet">
+
+    <!-- ---------------------------Font-Awesome--------------------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body onload="load()">
+
+<div id="preloader"></div>
+
+<!-- ------------------------------Hero Section-------------------------------- -->
+<header id="home">
+<div class="hero_sec">
+    <div class="hero_left">
+
+        <div class="box1">
+        <h1>Vikash Maths Academy</h1>
+        <h2>Center Of Students</h2>
+        </div>
+        <div class="box2">
+        <h1>Best Online Coaching</h1>
+        <h2>With Lecture Videos</h2>
+        </div>
+        <a href="https://youtube.com/@VIKASHMATHSACADEMY?si=1UDT-MR_ZHP0gwRg"><button>Know More</button></a>
+    </div>
+    <div class="hero_right"><img src="images/Sideimg1.0.jpg" alt="Side Image"></div>
+</div>
+</header>
+
+<!-- ------------------------------------Navigation---------------------------------- -->
+
+<div class="navbar update_navbar">
+    <ul>
+        <li id="firstlist"><a href="index.html">Home</a></li>
+        <li><a href="index.html">About Us</a></li>
+        <li><a href="index.html">My Work</a></li>
+        <li><a href="Update.html">Updates</a></li>
+        <li><a href="Solutions.html">Solutions</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+    </ul>
+</div>
+
+<!-- -----------------------Solutions Below------------------------ -->
+
+<div class="search_filter">
+<div id="search-bar">
+    <label for="search">Search :</label>
+    <input type="text" id="search" oninput="searchH2()" placeholder="Search Headings....." autofocus>
+  </div>
+
+  <div class="search-result" id="searchResult"></div>
+</div>
+
+<div class="txt_list">
+    <h3>Get Solutions</h3>
+</div>
+
+
+
+<!-- ----------------------------------Update Below----------------------------------- -->
+
+<div class="sol_box">
+
+    <div class="sol_container">
+        <h2>Important Maths Concept</h2>
+        <img src="images/Maths 1.webp" alt="image">
+    </div>
+
+    <!-- <div class="sol_container">
+        <h2>This is first image</h2>
+        <img src="images/" alt="image">
+    </div> -->
+
+</div>
+
+<!-- -----------------------------------Update Above-------------------------------- -->
+
+
+
+
+<!-- ---------------------------------Footer-------------------------------- -->
+
+<footer>
+    <h1>Go Premium</h1>
+    <div class="foot-head">
+
+        <div class="foot-left">
+            <h1>Get Personal Guide At</h1>
+            <h2>Just ₹50 Only</h2>
+            <p>Send Us mail and our team will contact you and provide you all <br> the details within 24hrs.</p>
+        </div>
+
+        <div class="foot-right">
+            <h4>Please Enter Your <br> Email Below</h4>
+            <form>
+            <input type="email" placeholder="Email Address" id="footmail" onkeyup="sendMail()">
+            <button type="submit" onclick="return footmailsend()">Send</button>
+            <p id="mailError"></p>
+            </form>
+        </div>
+
+    </div>
+    <br><hr>
+    <div class="foot_bottom">
+        <a href="https://youtube.com/@VIKASHMATHSACADEMY?si=XyXjeevZ1BoVcTnJ"><i class="fa-brands fa-youtube" id="yt"></i></a>
+        <a href="https://www.instagram.com/vikashmathsacademy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram" id="insta"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook" id="fb"></i></a>
+        <a href="#"><i class="fa-brands fa-telegram" id="tele"></i></a>
+    </div>
+</footer>
+
+<!-- ---------------------------Including Javascript--------------------------- -->
+
+<script src="index.js"></script>
+
+<!-- ---------------------------Typed Js Code---------------------------- -->
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed(".auto-type",{
+        strings: ["Youtuber", "Teacher", "Freelancer", "Motivational Speaker"],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true
+    });
+    </script>
+
+<!-- --------------------------------Animate On Scroll--------------------------------- -->
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 200,
+    duration: 1200
+  });
+</script>
+
+<!-- ----------------------------------Adding Bootstrap---------------------------------- -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,477 @@
+/*---------------------Removing Default Styles-------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+}
+#preloader{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    background-image: url(images/preloader.gif);
+    background-repeat: no-repeat;
+    z-index: 999;
+    background-position: center;
+    position: fixed;
+    background-size: 300px;
+}
+
+/*-------------------------------Hero Section--------------------------*/
+
+.hero_sec{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.hero_sec .hero_left{
+    flex-basis: 45%;
+    background-image: url(images/Leftbg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.hero_sec .hero_left .box1{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+.hero_sec .hero_left .box1 h1{
+    color: rgb(255, 64, 64);
+    font-size: 40px;
+}
+.hero_sec .hero_left .box1 h2{
+    color: rgb(149, 94, 94);
+    font-size: 30px;
+}
+.hero_sec .hero_left .box2{
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-bottom: 20px
+}
+.hero_sec .hero_left .box2 h1{
+    color: rgb(44, 135, 164);
+}
+.hero_sec .hero_left .box2 h2{
+    color: rgb(237, 61, 72);
+}
+.hero_sec .hero_left button{
+    margin-left: 50px;
+    margin-top: 30px;
+    padding: 10px 30px;
+    border: 0;
+    background-color: #045D5D;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+.hero_sec .hero_right{
+    flex-basis: 50%;
+    overflow: hidden;
+}
+.hero_sec .hero_right img{
+    height: 100%;
+    width: 100%;
+}
+
+/* -------------------------------------Navigation------------------------------- */
+
+.navbar{
+    margin-top: 3px;
+    height: 60px;
+    line-height: 60px;
+    background-color: black;
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.update_navbar{
+    line-height: 45px;
+}
+.navbar::-webkit-scrollbar{
+    display: none;
+}
+.navbar ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 20px;
+}
+#firstlist{
+    margin-left: -10px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: all 0.3s linear;
+}
+.navbar ul li a:hover{
+    color: yellow;
+}
+
+/* -----------------------------------About Section---------------------------- */
+
+.txt_list h3{
+    color: rgb(172, 26, 223);
+    text-align: center;
+    margin-top: 30px;
+    font-size: 28px;
+}
+.about_box{
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.about_box .about_content h5{
+    text-align: center;
+    font-size: 23px;
+    color: rgb(20, 150, 8);
+}
+.about_box .about_content p{
+    color: rgb(243, 22, 181);
+}
+.portfolio{
+    margin-bottom: 10px;
+    margin-top: 50px;
+    height: 400px;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,0.7)), url(images/port-back.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+}
+.portfolio .left_port{
+    margin: 10px;
+    flex-basis: 35%;
+    overflow: hidden;
+}
+.portfolio .left_port img{
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+}
+.portfolio .right_port{
+    flex-basis: 60%;
+    color: white;
+}
+.portfolio .right_port .port_container{
+    margin-left: 25%;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+.portfolio .right_port .port_container #name{
+    color: rgb(104, 240, 57);
+}
+.portfolio .right_port .port_container h2, .portfolio .right_port .port_container h1{
+    margin-bottom: 5px;
+}
+.portfolio .right_port .port_container h3{
+    font-size: 30px;
+}
+.portfolio .right_port .port_container h3 .auto-type{
+    color: rgb(205, 67, 183);
+}
+.portfolio .right_port .port_container p{
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+.portfolio .right_port .port_container button{
+    margin-top: 20px;
+    border: 0;
+    border-radius: 12px;
+    padding: 10px 35px;
+    background-color: rgb(237, 61, 72);
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/* ----------------------------------My Work------------------------------------------- */
+
+.viewall{
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+.viewall a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.viewall a i{
+    margin-left: 7px;
+    cursor: pointer;
+}
+/* -----------------Popular Videos------------------- */
+.work_container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.work_container .work_box1{
+    margin-top: 30px;
+    flex-basis: 32%;
+    height: 215px;
+    overflow: hidden;
+}
+.work_container .work_box1 iframe{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* ------------Shorts------------------- */
+
+.work-shorts{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.work-shorts::-webkit-scrollbar{
+    display: none;
+}
+.work-shorts .work_box2{
+    display: inline-block;
+    height: 400px;
+    width: 200px;
+    margin-left: 50px;
+}
+.work-shorts .work_box2:first-child{
+    margin-left: 0;
+}
+.work-shorts .work_box2 iframe{
+    height: 100%;
+    width: 100%;
+}
+
+/* -----------------------------------Update------------------------------------ */
+
+.update_box{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* ------------------------------------Contact-------------------------------------------- */
+
+#contact_form{
+    margin-top: 30px;
+}
+.contact-form-container{
+    margin: auto;
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+} 
+.contact-form-container .contact-form{
+    display: flex;
+    flex-direction: column;
+}
+.contact-form-container .contact-form label{
+    margin-top: 10px;
+}
+.contact-form-container .contact-form input, .contact-form-container .contact-form textarea{
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.contact-form-container .contact-form button{
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+} 
+.contact-form-container .contact-form button:hover{
+    background-color: #2980b9;
+}
+#nameError, #mailError, #phoneError, #subError{
+    margin-bottom: 10px;
+}
+#msgError{
+    margin-bottom: 20px;
+}
+#subError{
+    margin-top: 10px;
+}
+
+/* ----------------------------Solution Page--------------------------- */
+
+.search_filter{
+    background-color: #045D5D;
+    padding: 10px;
+    padding-bottom: 5px;
+}
+#search-bar{
+    margin: 20px;
+    margin-top: 0;
+    padding-top: 10px;
+}
+.search_filter label{
+    color: white;
+}
+.search_filter #search{
+    margin-left: 10px;
+    outline: 0;
+    border: 0;
+    padding: 5px;
+    width: 500px;
+    border-radius: 10px;
+}
+.search-result{
+    display: none;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+.sol_box{
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+}
+.sol_box .sol_container{
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 30px;
+}
+.sol_box .sol_container h2{
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: red;
+}
+.sol_box .sol_container img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+/* --------------------------------Footer----------------------------------- */
+
+footer{
+    background-color: black;
+    padding: 10px;
+    color: white;
+    margin-top: 50px;
+}
+footer h1{
+    font-size: 28px;
+    color: rgb(252, 216, 28);
+    text-align: center;
+}
+.foot-head{
+    display: flex;
+    justify-content: space-between;
+}
+.foot-head .foot-left{
+    flex-basis: 55%;
+    margin-left: 10px;
+}
+.foot-head .foot-left h1{
+    color: blueviolet;
+    text-align: left;
+    margin-bottom: 8px;
+}
+.foot-head .foot-left h2{
+   margin-bottom: 8px;
+}
+.foot-head .foot-right{
+    flex-basis: 40%;
+}
+.foot-head .foot-right h4{
+    font-size: 25px;
+}
+.foot-head .foot-right input{
+    margin-top: 40px;
+    height: 40px;
+    padding: 10px;
+    flex: 1;
+    background-color: rgb(97, 146, 146);
+    color: white;
+    border: 0;
+    outline: 0;
+    width: 300px;
+    z-index: -1;
+}
+.foot-head .foot-right input::placeholder{
+    color: white;
+}
+.foot-head .foot-right button{
+    padding: 0px 30px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    border: 0;
+    background-color: rgb(240, 42, 42);
+    position: relative;
+    left: -10px;
+    cursor: pointer;
+}
+#mailError{
+    margin-top: 10px;
+}
+.foot_bottom{
+    text-align: center;
+}
+.foot_bottom i{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+#yt{
+    background-color: rgb(205, 32, 31);
+}
+#insta{
+    background: linear-gradient(#fccc63, #fbad50, #cd486b, #4c68d7);
+}
+#fb{
+    background: #316FF6;
+}
+#tele{
+    background: #229ED9;
+}
